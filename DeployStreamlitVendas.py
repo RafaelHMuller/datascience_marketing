@@ -70,7 +70,7 @@ if botao:
     dataframe_X = dataframe_X[sequencia_colunas] 
     modelo = joblib.load('Modelo de Previsão de Vendas.joblib') 
     preco = modelo.predict(dataframe_X) 
-    st.write(f'R$ {preco[0]}') 
+    st.write(f'R$ {preco[0]:,.2f}') 
 
 # sequência das linahs de código do botão:
     # criar um dataframe dos valores X com a mesma ordem de colunas que o dataframe final do projeto de ciência de dados
