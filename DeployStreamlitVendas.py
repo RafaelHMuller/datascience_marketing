@@ -31,7 +31,7 @@ sequencia_colunas = list(df.columns)
 
 # Importar as features da base de dados final
 
-# In[5]:
+# In[4]:
 
 
 # print(X.columns) no código do modelo
@@ -39,7 +39,7 @@ sequencia_colunas = list(df.columns)
 
 # Criar dicionários a partir das features e seus valores iniciais
 
-# In[7]:
+# In[5]:
 
 
 # dicionário das features numéricas
@@ -52,7 +52,7 @@ x_numericos = {
 
 # Criar botões para cada feature (streamlit)
 
-# In[8]:
+# In[6]:
 
 
 # botões das features numéricas
@@ -63,14 +63,21 @@ for chave in x_numericos:
     
 # botão final (previsão)  
 
-botao = st.button('Prever Valor do Vôo')
+botao = st.button('Prever Valor da Venda')
 
 if botao:
-    dataframe_X = pd.DataFrame(x_numerico, index=[0]) # criar um dataframe dos valores X com a mesma ordem de colunas que o dataframe final do projeto de ciência de dados
-    dataframe_X = dataframe_X[sequencia_colunas] # reordenar as colunas do dataframe
-    modelo = joblib.load('Modelo de Previsão.joblib') # importar o modelo
-    preco = modelo.predict(dataframe_X) # usar a previsão do modelo
-    st.write(f'R$ {preco[0]}') # escrever o valor previsto no streamlit 
+    dataframe_X = pd.DataFrame(x_numericos, index=[0]) 
+    dataframe_X = dataframe_X[sequencia_colunas] 
+    modelo = joblib.load('Modelo de Previsão de Vendas.joblib') 
+    preco = modelo.predict(dataframe_X) 
+    st.write(f'R$ {preco[0]}') 
+
+# sequência das linahs de código do botão:
+    # criar um dataframe dos valores X com a mesma ordem de colunas que o dataframe final do projeto de ciência de dados
+    # reordenar as colunas do dataframe
+    # importar o modelo
+    # usar a previsão do modelo
+    # escrever o valor previsto no streamlit 
 
 
 # Concluído o código:
