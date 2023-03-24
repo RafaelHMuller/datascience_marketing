@@ -32,14 +32,14 @@ Deploy do projeto (via streamlit):<br>
 
 ## Execução
 
-* Primeiramente deve-se executar o arquivo 'Aula 3 - Ciência de Dados.py', no qual faz-se toda a ciência de dados, machine learning e definição do melhor modelo de previsão;
-*  Em seguida, executa-se o arquivo 'DeployStreamlitVendas.py', onde será gerado o deploy do modelo de previsão;
-*  Por fim, dentro do prompt de comando do programa python escolhido (no meu caso, utilizei o Anaconda Prompt (anaconda3)), encontrar a pasta onde se encontra o arquivo "DeployStreamlitVendas.py" e executar o comando do streamlit run "DeployStreamlitVendas.py" para visualizar, no navegador padrão do computador, o modelo preditivo do valor de venda da empresa Hashtag.
+<strong>1.</strong> executar o arquivo 'Aula 3 - Ciência de Dados.py', no qual faz-se toda a ciência de dados, machine learning e definição do melhor modelo de previsão;<br>
+<strong>2.</strong> executar o arquivo 'DeployStreamlitVendas.py', onde será gerado o deploy do modelo de previsão;<br>
+<strong>3.</strong> do prompt de comando do programa python escolhido (no meu caso, utilizei o Anaconda Prompt (anaconda3)), encontrar a pasta onde se encontra o arquivo "DeployStreamlitVendas.py" e executar o comando do streamlit run "DeployStreamlitVendas.py" para visualizar, no navegador padrão do computador, o modelo preditivo do valor de venda da empresa Hashtag.<br>
 
 ## Bibliotecas
-* pandas: biblioteca que permite, no caso, a integração de arquivo excel
-* seaborn, matplotlib.pyplot, plotly.express: bibliotecas de visualização gráfica
-* time: biblioteca de gerenciamento de tempo no código
-* sklearn: biblioteca de machine learning/inteligência artificial
-* joblib: biblioteca de criação do deploy do modelo de previsão
-* streamlit: biblioteca de visualização do deploy do modelo de previsão no navegador padrão
+* <strong>pandas:</strong> biblioteca que permite, no caso, a integração de arquivo excel<br>
+* <strong>seaborn, matplotlib.pyplot, plotly.express:</strong> bibliotecas de visualização gráfica<br>
+* <strong>time:</strong> biblioteca de gerenciamento de tempo no código<br>
+* <strong>sklearn:</strong> biblioteca de predição estatística (machine learning/inteligência artificial)<br>
+* <strong>joblib:</strong> biblioteca de criação do deploy do modelo de previsão<br>
+* <strong>streamlit:</strong> biblioteca de visualização do deploy do modelo de previsão no navegador padrão<br>
